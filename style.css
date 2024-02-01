@@ -4,16 +4,16 @@
     padding:0;
 }
 nav {
-
-    background-color: beige;
+   
+    margin-top: 25px;
+    text-align: center;
+    
 }
 
 a{
-    font-size: 20px;  
-}
-
-section {
-    background-color: beige;
-    height:200px;
-    margin-bottom: 30px;
+    font-size: 18px; 
+    width: 50%;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: black;
 }
