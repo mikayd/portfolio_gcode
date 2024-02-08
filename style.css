@@ -1,19 +1,62 @@
 
 *{
-    margin:0;
-    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-nav {
-   
-    margin-top: 25px;
+
+/*navigation links*/
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+    margin: 0 auto;
+    margin-top:40px;
     text-align: center;
+    grid-auto-columns: fit-content(8px);
+
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+/*fallback on this code for menu*/
+/*.one a, .two a, .three a, .four {
+    text-decoration: none;
+    color:black;
+}
+*/
+
+
+/*about me*/
+.aboutme {
+  width:30%;
+  line-height: 40px;
+  font-size: 16px ;
+  margin-left: 40px;
+  margin-top:40px;
+}
+
+span {
+    color:#ff3c90;
+    
+    font-family:monospace
+}
+
+
+/* work section*/
+
+
+
+/* contact section */
+.contact {
+    display: grid;
+    margin: 10px 40px;
+    border:1px dotted black;
     
 }
 
-a{
-    font-size: 18px; 
-    width: 50%;
-    padding: 0px 20px;
-    text-decoration: none;
-    color: black;
-}
+
+
+
