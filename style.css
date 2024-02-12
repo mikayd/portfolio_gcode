@@ -13,6 +13,11 @@
     object-fit: cover;
     z-index: -1;
 }
+
+video {
+    visibility: hidden;
+}
+
 body {
     color:black
 }
@@ -49,7 +54,7 @@ a {
 
 /*about me*/
 
-.aboutme {
+#aboutme {
   width:700px;
   line-height: 30px;
   font-size: 18px ;
@@ -61,9 +66,7 @@ a {
 
 .worktitle {
     margin: 80px 40px 10px;
-    font-weight: bold;
-    font-size:20px;
-    border-bottom: 0.5px dashed white;
+    font-size:18px;
 }
 .socials {
     display: flex;
@@ -78,41 +81,86 @@ a {
      flex: 1 ; 
  }
 
-.work {
+
+.workgrid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin-left: 40px;
     margin-top: 20px;
-    row-gap: 100px;
-    
+   
 }
-
-
-.one_1 {
+.card_column_one {
     
     display:flex;
     gap: 10px;
     flex-direction:column;
 }
 
-/* contact section */
-#contact {
-    display: flex;
-   
-    margin: 40px;
-    font-size: 20px;
-    height:300px;
-    flex:1;
-    align-items: start;
-    
-}
 .one_cell, .four_cell, .seven_cell {
-    width:400px;
+    width:300px;
 }
 
-video {
-    visibility: hidden;
+/* contact section */
+#contact {
+    height:300px;
+   
+}
+/* two column flex section */
+.contact_area {
+    display:flex;
+    flex-direction: row;
+    margin-left: 40px;
+    width:500px;
+    gap:10px;
+   
+    
+}
+/* first flex column section */
+.contact_me{
+    
+
+}
+/* second flex column section/grid */
+.contact_sections {
+    display:grid;
+    gap:20px;
+    
+}
+/*grid-items from .contact_sections  */
+.name {
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
+
+}
+#name, #email, #message{
+    
+
+}
+#message {
+    resize: none;
+    height:50px;
+    width: fit-content;
+}
+#submit{
+    padding:5px;
+}
+ 
+footer {
+    text-align: center;
+    height: 100px;
+
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px
+}
+
+footer a{
+    text-decoration: none;
 }
 
 

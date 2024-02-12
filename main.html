@@ -15,12 +15,15 @@
             <nav class="menu">
                 
                 <div class="one"> <a href="#home"> [Home]</a></div>
-                <div class= "two"><a href="#aboutme"> [About Me] </a></div>
+                <div class= "two"><a href="#about"> [About Me] </a></div>
                 <div class= "three"> <a href="#work"> [Work] </a> </div>
                 <div class= "four"><a href="#contact"> [Contact] </a></div>
             </nav>
+            <div id="home">
+
+            </div>
         <!--about me -->
-            <div class="aboutme">
+            <div id="aboutme">
                 <p>
                     Hi, my name is Mikayla! I'm a multidisciplinary designer from Virgina.
                      My work encompasses design, art, and music. Much of my work is inspired by
@@ -36,17 +39,18 @@
         <!--work-->
         
         
-        <p class="worktitle"> Work </p>
+        
+        
+        <div id="work">
+            <p class="worktitle"> Work </p>
         <div class="socials">
             <div id ="github"><a href="github.com/mikayd">Github</a></div>
             <div id="linkedin"><a href="https://www.linkedin.com/in/interdisciplinarydesigner/">LinkedIn</a>
             </div>
         </div>
-        
-        <div class="work">
-            
+            <div class="workgrid">
                 <div class="one_cell">
-                    <div class ="one_1">
+                    <div class ="card_column_one">
                     <p>[ Bay Shore Hotel</p>
                     <img src="images/buckroebeach.webp">
                     </div>
@@ -59,7 +63,10 @@
                     <p>Web Design ]</p>
                 </div>
                 <div class="four_cell">
-                    <p>[ Manna Cafe Plus</p>
+                    <div class ="card_column_one">
+                        <p>[ Manna+ Cafe</p>
+                        <img src="images/mannalog.jpg">
+                        </div>
                  </div>
                 <div class="five_cell">
                     <p>In Progress</p>
@@ -68,26 +75,60 @@
                     <p>Web Design ]</p>
                 </div>
                 <div class="seven_cell">
-                    <p>[ Placeholder</p>
-                </div>
+                    <div class ="card_column_one">
+                        <p>[ Placeholder</p>
+                        <img src="images/placeholder.webp">
+                        </div>
+                 </div>
+                
                 <div class="eight_cell">
                     <p>Placeholder</p>
                 </div>
                 <div class="nine">
                     <p>Placeholder ]</p>
                 </div>
+
+            </div>
         </div>
        
             
         <!--contact/footer -->
-       
-            <section id="contact">
-                <div class="contact_1">Contact Me </div>
-                <div class="contact_2"> </div>
-                <div class="contact_3"> </div>
-            </section>
-           
-        
+       <div id="contact">
+        <!-- creates 2 column flex-->
+            <div class="contact_area">
+               <!--1st column flex-->
+                <div class="contact_me">
+                   <p> If you'd like to learn more about my projects
+                     or pick my brain, feel free to contact <strong>mikaylad0005@gmail.com</strong> 
+                      or input your information in the contact form</p>
+                </div>
+                <!--2nd column flex/also grid -->
+                <form class="contact_sections">
+                    <div>Let's Stay Connected!</div>
+                    <div class = "name" >
+                        <label for="name">Name:</label>
+                        <input type="text" name="username" id="name">
+                    </div>
+                    <div class = "name" >
+                        <label for="email">Your email:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class = "name" >
+                        <label for="message">Your message:</label>
+                        <textarea type="text" name="message" id="message">
+                        </textarea>
+                    </div>
+                    <div class = "submit" >
+                        <input type="submit" value="Send Email" id="submit"> 
+                    
+                     </div>
+                </form>  
+            </div>
+            <footer class="footer">
+                <p>Mikayla Davis ©2024 </p>
+            <p> <a href ="#home" >Back to top</a></p>
+        </footer>
+        </div>
     </body>
 
 
