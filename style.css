@@ -57,10 +57,10 @@ a {
 
 
 /*about me*/
-.aboutme img {
+.about img {
     width: 140px;
 }
-.aboutme {
+.about {
   width:700px;
   line-height: 30px;
   font-size: 16px ;
@@ -116,7 +116,6 @@ a {
 .contact_area {
     display:flex;
     flex-direction: row;
-  
     width: 500px;
     gap: 300px;
     margin: 0 auto;
