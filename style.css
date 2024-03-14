@@ -57,10 +57,10 @@ a {
 
 
 /*about me*/
-.about img {
+#about img {
     width: 140px;
 }
-.about {
+#about {
   width:700px;
   line-height: 30px;
   font-size: 16px ;
@@ -108,7 +108,7 @@ a {
 }
 
 /* contact section */
-.contact {
+#contact {
     height:300px;
    
 }
